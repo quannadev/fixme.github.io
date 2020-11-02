@@ -28,19 +28,19 @@ do
    fi
        buildDEBIAN=0
    if [[ -z $dep ]]; then
-       echo "Depiction: https://nguyenthanh1995.github.io/description.html?goto=${pkg}" >> ./debs/tmp/DEBIAN/control
+       echo "Depiction: https://bonthoi.com/description.html?goto=${pkg}" >> ./debs/tmp/DEBIAN/control
        buildDEBIAN=1
    fi
    if [[ -z $home ]]; then
-        echo "Homepage: https://nguyenthanh1995.github.io/" >> ./debs/tmp/DEBIAN/control
+        echo "Homepage: https://bonthoi.com/" >> ./debs/tmp/DEBIAN/control
        buildDEBIAN=1
    fi
    if [[ -z $maintainer ]]; then
-        echo "Maintainer: nguyenthanh1995 <thanhnguyennguyen1995@gmail.com>" >> ./debs/tmp/DEBIAN/control
+        echo "Maintainer: bonthoi <bonthoi@gmail.com>" >> ./debs/tmp/DEBIAN/control
        buildDEBIAN=1
    fi
    if [[ -z $sponsor ]]; then
-        echo "Sponsor: nguyenthanh1995 <https://nguyenthanh1995.github.io>" >> ./debs/tmp/DEBIAN/control
+        echo "Sponsor: BonThoi <https://bonthoi.com>" >> ./debs/tmp/DEBIAN/control
        buildDEBIAN=1
    fi
    #binary 0 or 1
@@ -100,7 +100,7 @@ apt-ftparchive packages ./debs > ./Packages;
 bzip2 -c9k ./Packages > ./Packages.bz2;
 echo "------------------"
 echo "Building Release...."
-printf "Origin: Nguyen Thanh (shin-dev)\nLabel: shin-chan (N.Thanh)\nSuite: stable\nVersion: 1.0\nCodename: ios\nArchitecture: iphoneos-arm\nComponents: main\nDescription: Source Cydia Repo by Shin-chan (Nguyen Thanh)\nMD5Sum:\n "$(cat ./Packages | md5sum | cut -d ' ' -f 1)" "$(stat ./Packages --printf="%s")" Packages\n "$(cat ./Packages.bz2 | md5sum | cut -d ' ' -f 1)" "$(stat ./Packages.bz2 --printf="%s")" Packages.bz2\n" >Release;
+printf "Origin: BonThoi\nLabel: BonThoi\nSuite: stable\nVersion: 1.0\nCodename: ios\nArchitecture: iphoneos-arm\nComponents: main\nDescription: Source Cydia Repo by BonThoi\nMD5Sum:\n "$(cat ./Packages | md5sum | cut -d ' ' -f 1)" "$(stat ./Packages --printf="%s")" Packages\n "$(cat ./Packages.bz2 | md5sum | cut -d ' ' -f 1)" "$(stat ./Packages.bz2 --printf="%s")" Packages.bz2\n" >Release;
 
 echo "------------------"
 echo "Done!"

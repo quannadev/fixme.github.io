@@ -1,11 +1,11 @@
-http://nguyenthanh1995.github.io
-http://nguyenthanh1995.github.io/description.html
-http://nguyenthanh1995.github.io/tools/translate/
-http://nguyenthanh1995.github.io/tools/mterminal-theme/index.html
-http://nguyenthanh1995.github.io/tools/mterminal-theme/theme.html
-http://nguyenthanh1995.github.io/jailbreak-tool/index.html
-http://nguyenthanh1995.github.io/about.html
-http://nguyenthanh1995.github.io/chat.html
-http://nguyenthanh1995.github.io/install/
-http://nguyenthanh1995.github.io/SPA/
+http://bonthoi.com
+http://bonthoi.com/description.html
+http://bonthoi.com/tools/translate/
+http://bonthoi.com/tools/mterminal-theme/index.html
+http://bonthoi.com/tools/mterminal-theme/theme.html
+http://bonthoi.com/jailbreak-tool/index.html
+http://bonthoi.com/about.html
+http://bonthoi.com/chat.html
+http://bonthoi.com/install/
+http://bonthoi.com/SPA/
 
